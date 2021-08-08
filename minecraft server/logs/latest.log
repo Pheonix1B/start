@@ -1,0 +1,631 @@
+[11:54:40] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[11:54:44] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[11:54:53] [Worker-Main-2/INFO]: Loaded 7 recipes
+[11:55:03] [Server thread/INFO]: Starting minecraft server version 1.17.1
+[11:55:03] [Server thread/INFO]: Loading properties
+[11:55:04] [Server thread/INFO]: This server is running CraftBukkit version 3211-Spigot-18c71bf-2cdc6b1 (MC: 1.17.1) (Implementing API version 1.17.1-R0.1-SNAPSHOT)
+[11:55:05] [Server thread/WARN]: Unable to read file whitelist.json, backing it up to {0}.backup and creating new copy.
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $
+	at com.google.gson.Gson.assertFullConsumption(Gson.java:863) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at com.google.gson.Gson.fromJson(Gson.java:826) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.players.JsonList.load(JsonList.java:163) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.B(SourceFile:107) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.dedicated.DedicatedPlayerList.<init>(SourceFile:27) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:196) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:995) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1559) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at com.google.gson.stream.JsonReader.checkLenient(JsonReader.java:1401) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:542) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:425) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at com.google.gson.Gson.assertFullConsumption(Gson.java:859) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	... 8 more
+[11:55:05] [Server thread/INFO]: Debug logging is disabled
+[11:55:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[11:55:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[11:55:05] [Server thread/INFO]: Default game type: CREATIVE
+[11:55:05] [Server thread/INFO]: Generating keypair
+[11:55:06] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:55:07] [Server thread/INFO]: Using default channel type
+[11:55:14] [Server thread/INFO]: [floodgate] Loading floodgate v2.0-SNAPSHOT
+[11:55:20] [Server thread/WARN]: [floodgate] en_CA is not a supported Floodgate language.
+[11:55:20] [Server thread/INFO]: [floodgate] Took 5,659ms to boot Floodgate
+[11:55:20] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v1.4.1-SNAPSHOT
+[11:55:20] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:55:20] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:55:20] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:55:20] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:55:20] [Server thread/INFO]: Preparing level "WOAH COOL"
+[11:55:21] [Server thread/INFO]: -------- World Settings For [WOAH COOL] --------
+[11:55:21] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[11:55:21] [Server thread/INFO]: Item Despawn Rate: 6000
+[11:55:21] [Server thread/INFO]: Item Merge Radius: 2.5
+[11:55:21] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[11:55:21] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[11:55:21] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[11:55:21] [Server thread/INFO]: View Distance: 8
+[11:55:21] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[11:55:21] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[11:55:21] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[11:55:21] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[11:55:21] [Server thread/INFO]: Max TNT Explosions: 100
+[11:55:21] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[11:55:21] [Server thread/INFO]: Experience Merge Radius: 3.0
+[11:55:21] [Server thread/INFO]: Mob Spawn Range: 6
+[11:55:21] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Cane Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Melon Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Potato Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Vine Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[11:55:21] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: -------- World Settings For [WOAH COOL_nether] --------
+[11:55:22] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[11:55:22] [Server thread/INFO]: Item Despawn Rate: 6000
+[11:55:22] [Server thread/INFO]: Item Merge Radius: 2.5
+[11:55:22] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[11:55:22] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[11:55:22] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[11:55:22] [Server thread/INFO]: View Distance: 8
+[11:55:22] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[11:55:22] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[11:55:22] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[11:55:22] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[11:55:22] [Server thread/INFO]: Max TNT Explosions: 100
+[11:55:22] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[11:55:22] [Server thread/INFO]: Experience Merge Radius: 3.0
+[11:55:22] [Server thread/INFO]: Mob Spawn Range: 6
+[11:55:22] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Cane Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Melon Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Potato Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Vine Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[11:55:22] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: -------- World Settings For [WOAH COOL_the_end] --------
+[11:55:23] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[11:55:23] [Server thread/INFO]: Item Despawn Rate: 6000
+[11:55:23] [Server thread/INFO]: Item Merge Radius: 2.5
+[11:55:23] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[11:55:23] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[11:55:23] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[11:55:23] [Server thread/INFO]: View Distance: 8
+[11:55:23] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[11:55:23] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[11:55:23] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[11:55:23] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[11:55:23] [Server thread/INFO]: Max TNT Explosions: 100
+[11:55:23] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[11:55:23] [Server thread/INFO]: Experience Merge Radius: 3.0
+[11:55:23] [Server thread/INFO]: Mob Spawn Range: 6
+[11:55:23] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Cane Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Melon Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Potato Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Vine Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[11:55:23] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[11:55:23] [Server thread/ERROR]: Error loading saved data: raids_end
+java.lang.ArrayIndexOutOfBoundsException: arraycopy: length -1 is negative
+	at java.lang.System.arraycopy(Native Method) ~[?:?]
+	at java.io.PushbackInputStream.unread(PushbackInputStream.java:232) ~[?:?]
+	at net.minecraft.world.level.storage.WorldPersistentData.a(SourceFile:115) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.world.level.storage.WorldPersistentData.a(SourceFile:91) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.world.level.storage.WorldPersistentData.b(SourceFile:71) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.world.level.storage.WorldPersistentData.a(SourceFile:59) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.world.level.storage.WorldPersistentData.a(SourceFile:43) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.level.WorldServer.<init>(WorldServer.java:260) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:584) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:266) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:995) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[11:55:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[11:55:24] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:37] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:38] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:38] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:39] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:39] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:40] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:40] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:41] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:41] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:42] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:42] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:43] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:44] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:44] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:45] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:46] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:46] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:46] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:46] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:48] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:52] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:53] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:53] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:54] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:54] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:55] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:55] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:56] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:56] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:57] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:57] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:58] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:55:58] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:02] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:03] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:03] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:08] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:10] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:10] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:11] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:11] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:12] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:12] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:17] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:17] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:18] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:18] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:20] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:20] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:21] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:21] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:23] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:23] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:25] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:25] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:25] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:25] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:26] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:26] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:28] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:28] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:28] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:28] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:29] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:29] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:30] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:30] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:31] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:31] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:56:36] [Worker-Main-2/INFO]: Preparing spawn area: 15%
+[11:56:38] [Worker-Main-2/INFO]: Preparing spawn area: 23%
+[11:56:38] [Worker-Main-2/INFO]: Preparing spawn area: 23%
+[11:56:38] [Worker-Main-2/INFO]: Preparing spawn area: 23%
+[11:56:38] [Worker-Main-2/INFO]: Preparing spawn area: 23%
+[11:56:38] [Worker-Main-2/INFO]: Preparing spawn area: 23%
+[11:56:39] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 54%
+[11:56:47] [Worker-Main-2/INFO]: Preparing spawn area: 67%
+[11:57:15] [Server thread/INFO]: Time elapsed: 111908 ms
+[11:57:15] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:19] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:20] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:20] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:21] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:21] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:22] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:23] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:23] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:23] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:24] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:24] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:25] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:57:25] [Worker-Main-2/INFO]: Preparing spawn area: 1%
+[11:57:26] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:28] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:28] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:28] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:28] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:28] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:29] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:30] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:30] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:30] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:31] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:31] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[11:57:32] [Worker-Main-2/INFO]: Preparing spawn area: 4%
+[11:57:32] [Worker-Main-2/INFO]: Preparing spawn area: 4%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 5%
+[11:57:36] [Worker-Main-2/INFO]: Preparing spawn area: 6%
+[11:57:37] [Worker-Main-2/INFO]: Preparing spawn area: 9%
+[11:57:37] [Worker-Main-2/INFO]: Preparing spawn area: 17%
+[11:57:38] [Worker-Main-2/INFO]: Preparing spawn area: 22%
+[11:57:38] [Worker-Main-2/INFO]: Preparing spawn area: 29%
+[11:57:40] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[11:57:40] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[11:57:40] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[11:57:40] [Worker-Main-2/INFO]: Preparing spawn area: 31%
+[11:57:41] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[11:57:41] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[11:57:42] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[11:57:42] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[11:57:43] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[11:57:43] [Worker-Main-2/INFO]: Preparing spawn area: 42%
+[11:57:44] [Worker-Main-2/INFO]: Preparing spawn area: 71%
+[11:57:44] [Worker-Main-2/INFO]: Preparing spawn area: 71%
+[11:57:45] [Worker-Main-2/INFO]: Preparing spawn area: 71%
+[11:57:45] [Worker-Main-2/INFO]: Preparing spawn area: 71%
+[11:57:46] [Worker-Main-2/INFO]: Preparing spawn area: 71%
+[11:57:46] [Worker-Main-2/INFO]: Preparing spawn area: 75%
+[11:57:47] [Worker-Main-2/INFO]: Preparing spawn area: 78%
+[11:57:47] [Worker-Main-2/INFO]: Preparing spawn area: 80%
+[11:57:48] [Worker-Main-2/INFO]: Preparing spawn area: 81%
+[11:57:49] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[11:57:49] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[11:57:49] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[11:57:50] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[11:57:50] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[11:57:51] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[11:57:51] [Worker-Main-2/INFO]: Preparing spawn area: 83%
+[11:57:52] [Worker-Main-2/INFO]: Preparing spawn area: 84%
+[11:57:52] [Worker-Main-2/INFO]: Preparing spawn area: 84%
+[11:57:53] [Worker-Main-2/INFO]: Preparing spawn area: 85%
+[11:57:53] [Worker-Main-2/INFO]: Preparing spawn area: 85%
+[11:57:54] [Worker-Main-2/INFO]: Preparing spawn area: 86%
+[11:57:54] [Worker-Main-2/INFO]: Preparing spawn area: 87%
+[11:57:55] [Worker-Main-2/INFO]: Preparing spawn area: 89%
+[11:57:55] [Worker-Main-2/INFO]: Preparing spawn area: 90%
+[11:57:56] [Worker-Main-2/INFO]: Preparing spawn area: 92%
+[11:57:56] [Worker-Main-2/INFO]: Preparing spawn area: 92%
+[11:57:57] [Worker-Main-2/INFO]: Preparing spawn area: 92%
+[11:57:57] [Worker-Main-2/INFO]: Preparing spawn area: 92%
+[11:57:58] [Worker-Main-2/INFO]: Preparing spawn area: 93%
+[11:58:00] [Worker-Main-2/INFO]: Preparing spawn area: 95%
+[11:58:00] [Worker-Main-2/INFO]: Preparing spawn area: 95%
+[11:58:00] [Worker-Main-2/INFO]: Preparing spawn area: 95%
+[11:58:00] [Worker-Main-2/INFO]: Preparing spawn area: 96%
+[11:58:00] [Worker-Main-2/INFO]: Preparing spawn area: 96%
+[11:58:01] [Worker-Main-2/INFO]: Preparing spawn area: 96%
+[11:58:01] [Worker-Main-2/INFO]: Preparing spawn area: 96%
+[11:58:02] [Worker-Main-2/INFO]: Preparing spawn area: 99%
+[11:58:02] [Server thread/INFO]: Time elapsed: 46664 ms
+[11:58:03] [Server thread/WARN]: UUID of added entity already exists: EntityStrider['Strider'/224, l='ServerLevel[WOAH COOL_nether]', x=-81.56, y=31.50, z=-4.54]
+[11:58:03] [Server thread/WARN]: UUID of added entity already exists: EntityPiglin['Piglin'/229, l='ServerLevel[WOAH COOL_nether]', x=-66.87, y=66.00, z=113.18]
+[11:58:03] [Server thread/WARN]: UUID of added entity already exists: EntityPiglin['Piglin'/230, l='ServerLevel[WOAH COOL_nether]', x=-71.37, y=65.00, z=112.54]
+[11:58:03] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[11:58:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:04] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:06] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:06] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:06] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:07] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:09] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:10] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:10] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:10] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:11] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:12] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:12] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:13] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:14] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:14] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:15] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:16] [Worker-Main-2/INFO]: Preparing spawn area: 0%
+[11:58:17] [Worker-Main-2/INFO]: Preparing spawn area: 1%
+[11:58:17] [Worker-Main-2/INFO]: Preparing spawn area: 6%
+[11:58:18] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:21] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:21] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:21] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:21] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:21] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:21] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:21] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:22] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:23] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:23] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:23] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:24] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:24] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:25] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:25] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:26] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:27] [Worker-Main-2/INFO]: Preparing spawn area: 7%
+[11:58:27] [Server thread/INFO]: Time elapsed: 24395 ms
+[11:58:30] [Server thread/INFO]: [floodgate] Enabling floodgate v2.0-SNAPSHOT
+[11:59:25] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v1.4.1-SNAPSHOT
+[12:00:13] [Server thread/WARN]: [Geyser-Spigot] Failed to read/create config.yml! Make sure it's up to date and/or readable+writable!
+org.geysermc.platform.spigot.shaded.jackson.databind.JsonMappingException: while scanning a simple key
+ in 'reader', line 47, column 3:
+      auth-type:Floodgate
+      ^
+could not find expected ':'
+ in 'reader', line 48, column 3:
+      # Allow for password-based authe ... 
+      ^
+
+ at [Source: (File); line: 44, column: 9] (through reference chain: org.geysermc.platform.spigot.GeyserSpigotConfiguration["remote"])
+	at org.geysermc.platform.spigot.shaded.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:394) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:353) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1714) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:290) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3070) ~[?:?]
+	at org.geysermc.connector.utils.FileUtils.loadConfig(FileUtils.java:56) ~[?:?]
+	at org.geysermc.platform.spigot.GeyserSpigotPlugin.onEnable(GeyserSpigotPlugin.java:86) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:342) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:505) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:419) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:604) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:266) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:995) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+Caused by: org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.snakeyaml.error.MarkedYAMLException: while scanning a simple key
+ in 'reader', line 47, column 3:
+      auth-type:Floodgate
+      ^
+could not find expected ':'
+ in 'reader', line 48, column 3:
+      # Allow for password-based authe ... 
+      ^
+
+ at [Source: (File); line: 44, column: 14]
+	at org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.snakeyaml.error.MarkedYAMLException.from(MarkedYAMLException.java:27) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.YAMLParser.nextToken(YAMLParser.java:359) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.core.JsonParser.nextFieldName(JsonParser.java:861) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:295) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288) ~[?:?]
+	... 15 more
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
+ in 'reader', line 47, column 3:
+      auth-type:Floodgate
+      ^
+could not find expected ':'
+ in 'reader', line 48, column 3:
+      # Allow for password-based authe ... 
+      ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:484) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:299) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:247) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:602) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:165) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:175) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.YAMLParser.nextToken(YAMLParser.java:355) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.core.JsonParser.nextFieldName(JsonParser.java:861) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:295) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138) ~[?:?]
+	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288) ~[?:?]
+	... 15 more
+[12:00:13] [Server thread/WARN]: org.geysermc.platform.spigot.shaded.jackson.databind.JsonMappingException: while scanning a simple key
+[12:00:13] [Server thread/WARN]:  in 'reader', line 47, column 3:
+[12:00:13] [Server thread/WARN]:       auth-type:Floodgate
+[12:00:13] [Server thread/WARN]:       ^
+[12:00:13] [Server thread/WARN]: could not find expected ':'
+[12:00:13] [Server thread/WARN]:  in 'reader', line 48, column 3:
+[12:00:13] [Server thread/WARN]:       # Allow for password-based authe ... 
+[12:00:13] [Server thread/WARN]:       ^
+[12:00:13] [Server thread/WARN]: 
+[12:00:13] [Server thread/WARN]:  at [Source: (File); line: 44, column: 9] (through reference chain: org.geysermc.platform.spigot.GeyserSpigotConfiguration["remote"])
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:394)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:353)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1714)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:290)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4202)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3070)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.connector.utils.FileUtils.loadConfig(FileUtils.java:56)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.GeyserSpigotPlugin.onEnable(GeyserSpigotPlugin.java:86)
+[12:00:13] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263)
+[12:00:13] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:342)
+[12:00:13] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480)
+[12:00:13] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:505)
+[12:00:13] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:419)
+[12:00:13] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:604)
+[12:00:13] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:266)
+[12:00:13] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:995)
+[12:00:13] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303)
+[12:00:13] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:831)
+[12:00:13] [Server thread/WARN]: Caused by: org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.snakeyaml.error.MarkedYAMLException: while scanning a simple key
+[12:00:13] [Server thread/WARN]:  in 'reader', line 47, column 3:
+[12:00:13] [Server thread/WARN]:       auth-type:Floodgate
+[12:00:13] [Server thread/WARN]:       ^
+[12:00:13] [Server thread/WARN]: could not find expected ':'
+[12:00:13] [Server thread/WARN]:  in 'reader', line 48, column 3:
+[12:00:13] [Server thread/WARN]:       # Allow for password-based authe ... 
+[12:00:13] [Server thread/WARN]:       ^
+[12:00:13] [Server thread/WARN]: 
+[12:00:13] [Server thread/WARN]:  at [Source: (File); line: 44, column: 14]
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.snakeyaml.error.MarkedYAMLException.from(MarkedYAMLException.java:27)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.YAMLParser.nextToken(YAMLParser.java:359)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.core.JsonParser.nextFieldName(JsonParser.java:861)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:295)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:288)
+[12:00:13] [Server thread/WARN]: 	... 15 more
+[12:00:13] [Server thread/WARN]: Caused by: while scanning a simple key
+[12:00:13] [Server thread/WARN]:  in 'reader', line 47, column 3:
+[12:00:13] [Server thread/WARN]:       auth-type:Floodgate
+[12:00:13] [Server thread/WARN]:       ^
+[12:00:13] [Server thread/WARN]: could not find expected ':'
+[12:00:13] [Server thread/WARN]:  in 'reader', line 48, column 3:
+[12:00:13] [Server thread/WARN]:       # Allow for password-based authe ... 
+[12:00:13] [Server thread/WARN]:       ^
+[12:00:13] [Server thread/WARN]: 
+[12:00:13] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:484)
+[12:00:13] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:299)
+[12:00:13] [Server thread/WARN]: 	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:247)
+[12:00:13] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:602)
+[12:00:13] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:165)
+[12:00:13] [Server thread/WARN]: 	at org.yaml.snakeyaml.parser.ParserImpl.getEvent(ParserImpl.java:175)
+[12:00:13] [Server thread/WARN]: 	at org.geysermc.platform.spigot.shaded.jackson.dataformat.yaml.YAMLParser.nextToken(YAMLParser.java:355)
+[12:00:13] [Server thread/WARN]: 	... 20 more
+[12:00:14] [Server thread/ERROR]: Error occurred while enabling Geyser-Spigot v1.4.1-SNAPSHOT (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "org.geysermc.platform.spigot.GeyserSpigotConfiguration.getRemote()" because "this.geyserConfig" is null
+	at org.geysermc.platform.spigot.GeyserSpigotPlugin.onEnable(GeyserSpigotPlugin.java:110) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:342) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugin(CraftServer.java:505) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at org.bukkit.craftbukkit.v1_17_R1.CraftServer.enablePlugins(CraftServer.java:419) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.loadWorld(MinecraftServer.java:604) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:266) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:995) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spig.jar:3211-Spigot-18c71bf-2cdc6b1]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[12:00:17] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:00:21] [Server thread/INFO]: Done (300.579s)! For help, type "help"
+[12:00:31] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 9200ms or 184 ticks behind
+[12:01:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 9833ms or 196 ticks behind
+[12:01:29] [Server thread/INFO]: Stopping the server
+[12:01:29] [Server thread/INFO]: Stopping server
+[12:01:29] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v1.4.1-SNAPSHOT
+[12:01:29] [Server thread/INFO]: [floodgate] Disabling floodgate v2.0-SNAPSHOT
+[12:01:30] [Server thread/INFO]: Saving players
+[12:01:30] [Server thread/INFO]: Saving worlds
+[12:01:30] [Server thread/INFO]: Saving chunks for level 'ServerLevel[WOAH COOL]'/minecraft:overworld
